@@ -1,0 +1,299 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@500&display=swap");
+.donate {
+  width: 100%;
+  height: 100%;
+  padding: 100px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgba(222, 184, 135, 0.26);
+}
+.donate > div {
+  width: 90%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  /* border: 3px solid red; */
+  /* margin-top: 80px; */
+}
+.iane {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.iane > h1 {
+  font-size: 60px;
+  /* margin-bottom: 50px; */
+  color: rgb(0, 0, 0);
+  font-family: myFirstFont;
+}
+.leftright {
+  width: 100%;
+  height: 90%;
+  display: flex;
+  justify-content: center;
+}
+.leftdonate {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  margin-right: 20px;
+  width: 40%;
+  justify-content: center;
+}
+.leftdonate > div > p {
+  font-size: 20px;
+}
+.leftdonate > div > b {
+  font-size: 30px;
+
+}
+.leftdonate > div > button {
+  border-radius: 0;
+  margin-right: 20px;
+  background-color: white;
+  border: 1px solid black;
+  color: black;
+  padding: 10px 30px;
+}
+
+.leftdonate > div > button:hover {
+  transform: scale(1);
+}
+select {
+  width: 20%;
+  height: 40px;
+}
+.leftdonate > div > input {
+  width: 200px;
+  height: 40px;
+}
+.valut {
+  display: flex;
+}
+.rightdonate {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 30%;
+}
+.rightdonate > div {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+.rightdonate > div > label {
+  font-size: 26px;
+}
+.rightdonate > div > input {
+  width: 100%;
+  height: 30px;
+}
+.karta {
+  display: flex;
+  justify-content: space-between;
+}
+
+.rightdonate > div > div > input {
+  width: 100%;
+  height: 30px;
+}
+.cvv {
+  width: 100%;
+  height: 30px;
+}
+.rightdonate > div > label > input {
+  display: block;
+  width: 100%;
+  height: 30px;
+}
+.rightdonate > div > label {
+  width: 100%;
+  font-size: 20px;
+  /* background-color: black; */
+}
+.odebutton {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.odebutton button {
+  background-color: red;
+  border-radius: 0;
+}
+.odebutton button:hover {
+  transform: scale(1);
+}
+
+.activebtn {
+  background-color: red !important;
+}
+textarea {
+  resize: vertical;
+  min-height: 100px;
+  max-height: 270px;
+}
+
+@media (max-width: 1400px) {
+  textarea {
+    resize: horizontal;
+    min-height: 100px;
+    max-height: 190px;
+    max-width: 380px;
+  }
+}
+@media (max-width: 769px) {
+  textarea {
+    resize: horizontal;
+    min-height: 100px;
+    max-height: 190px;
+    max-width: 420px;
+  }
+  .leftright {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .leftdonate {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-right: 20px;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  .rightdonate {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+  }
+  .leftdonate > div > b {
+    font-size: 30px;
+    width: 100%;
+  }
+}
+@media (max-width: 426px){
+  textarea {
+    resize: horizontal;
+    min-height: 100px;
+    max-height: 190px;
+    max-width: 400px;
+  }
+  .leftright {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .leftdonate {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-right: 20px;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  .rightdonate {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .leftdonate > div > b {
+    font-size: 27px;
+    width: 100%;
+  }
+}
+@media (max-width: 376px){
+  textarea {
+    resize: horizontal;
+    min-height: 100px;
+    max-height: 190px;
+    max-width: 350px;
+  }
+  .leftright {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .leftdonate {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-right: 20px;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  .rightdonate {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .leftdonate > div > b {
+    font-size: 23px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 321px){
+  textarea {
+    resize: horizontal;
+    min-height: 100px;
+    max-height: 190px;
+    max-width: 300px;
+  }
+  .leftright {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .leftdonate {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-right: 20px;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  .rightdonate {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .iane > h1 {
+    font-size: 40px;
+    color: rgb(0, 0, 0);
+    font-family: myFirstFont;
+  }
+  .leftdonate > div > b {
+    font-size: 20px;
+    width: 100%;
+  }
+}

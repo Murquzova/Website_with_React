@@ -1,0 +1,44 @@
+.twopage {
+  width: 100%;
+  height: 1000px;
+  background-image: url("/src//components/foto/girl.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  object-fit: cover;
+  background-position: top;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: -2;
+}
+.twopage::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.418);
+  z-index: -1;
+}
+.ptwopage {
+  color: white;
+  font-family: myFirstFont;
+  font-size: 60px;
+  width: 80%;
+  text-align: center;
+  margin-top: -50px;
+}
+
+@media (max-width: 428px){
+  .ptwopage {
+    color: white;
+    font-family: myFirstFont;
+    font-size: 43px;
+    width:80%;
+    text-align: center;
+    margin-top: -50px;
+  }
+}

@@ -1,0 +1,134 @@
+video {
+  position: absolute;
+  width: 90%;
+  left: 0;
+  top: 50%;
+  height: 100%;
+  transform: translateY(-50%);
+  object-fit: cover;
+  /* padding: 40px 20px; */
+  /* transform: translate(-50%, -50%); */
+}
+.movie {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background: rgb(254, 243, 183);
+  background: linear-gradient(
+    0deg,
+    rgba(254, 243, 183, 1) 0%,
+    rgba(254, 243, 183, 1) 0%,
+    rgba(254, 243, 183, 0.37608546836703427) 0%
+  ); */
+  background-color: rgba(231, 212, 184, 0.473);
+  padding: 40px 20px;
+}
+.childvideo {
+  position: relative;
+  width: 50%;
+}
+.movie > div {
+  width: 50%;
+  display: flex;
+  height: 600px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.movie > div > p {
+  width: 70%;
+  font-size: 25px;
+  font-family: myFirstFont;
+}
+button {
+  font-family: myFirstFont;
+}
+
+@media (max-width: 768px) {
+  .childvideo {
+    position: relative;
+    width: 100%;
+  }
+  .movie {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+    justify-content: center;
+    background-color: rgba(231, 212, 184, 0.473);
+    padding: 40px 20px;
+  }
+  video {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 50%;
+    height: 100%;
+    transform: translateY(-50%);
+    object-fit: cover;
+  }
+  .movie > div {
+    width: 100%;
+    display: flex;
+    height: 600px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
+@media (max-width: 428px){
+  .movie {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+    justify-content: center;
+    background-color: rgba(231, 212, 184, 0.473);
+    padding: 10px 20px;
+  }
+  video {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 50%;
+    height: 100%;
+    transform: translateY(-50%);
+    object-fit: cover;
+  }
+  .movie > div {
+    width: 100%;
+    display: flex;
+    height: 600px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .movie > div > p {
+    width: 90%;
+    font-size: 25px;
+    font-family: myFirstFont;
+  }
+}
+@media (max-width: 321px){
+  .movie > div > p {
+    width: 100%;
+    font-size: 17px;
+    font-family: myFirstFont;
+  }
+  .movie > div {
+    width: 100%;
+    display: flex;
+    height: 400px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}

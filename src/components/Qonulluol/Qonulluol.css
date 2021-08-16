@@ -1,0 +1,29 @@
+.qonulluol {
+  width: 100%;
+  height: 700px;
+  border: 1px solid red;
+  padding-top: 70px;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* align-items: center; */
+}
+.qonulluol > div {
+  width: 50%;
+  border: 1px solid red;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+/* .qonulluol>div>div{ */
+    /* border: 1px solid red; */
+
+/* } */
+.qonulluol > div input {
+display: block;
+width: 300px;
+  height: 30px;
+}

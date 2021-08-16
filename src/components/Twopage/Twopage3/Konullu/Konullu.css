@@ -1,0 +1,63 @@
+.konullu {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .konulluimg {
+    border-radius: 0 !important;
+    width: 60% !important;
+    height: 70%;
+  }
+  .konullufoto {
+    width: 100%;
+    border-radius: 0 !important;
+  }
+  .konullu > div > p {
+    margin-top: 20px;
+    width: 60% !important;
+    font-size: 27px !important;
+    text-align: center;
+  }
+  .konullu > div {
+    border-radius: 0 !important;
+    width: 100% !important;
+  }
+  @media (max-width: 769px){
+    .konulluimg {
+      border-radius: 0 !important;
+      width: 90% !important;
+      height: 70%;
+    }
+    .konullu > div > p {
+      margin-top: 20px;
+      width: 80% !important;
+      font-size: 27px !important;
+      text-align: center;
+    }
+  }
+  @media (max-width: 426px){
+    .konulluimg {
+      border-radius: 0 !important;
+      width: 100% !important;
+      height: 90%;
+    }
+    .konullu > div > p {
+      margin-top: 20px;
+      width: 100% !important;
+      font-size: 20px !important;
+      text-align: center;
+    }
+  }
+  @media (max-width: 321px){
+    .konulluimg {
+      border-radius: 0 !important;
+      width: 100% !important;
+      height: 90%;
+    }
+    .konullu > div > p {
+      margin-top: 20px;
+      width: 100% !important;
+      font-size: 17px !important;
+      text-align: center;
+    }
+  }

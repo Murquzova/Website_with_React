@@ -1,0 +1,39 @@
+.number {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid red; */
+  /* background-color: aqua; */
+}
+.number > div {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+
+  /* border: 1px solid red; */
+
+}
+
+.number > div > div {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  align-items:center;
+  /* border: red ridge 1px; */
+
+  justify-content: center;
+  /* border: 1px solid red; */
+}
+.number > div > div > p {
+  font-family: myFirstFont;
+
+  font-size: 30px;
+  text-align: center;
+  color: rgb(245, 240, 240);
+}
+.number > div > div > p>b{
+    font-size: 46px;
+}

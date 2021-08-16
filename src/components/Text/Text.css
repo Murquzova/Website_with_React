@@ -1,0 +1,110 @@
+.text {
+  width: 100%;
+  height: 600px;
+  /* background-color: rgba(160, 6, 6, 0.678); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("/src/components/foto/tri\ \(3\).jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  object-fit: cover;
+  background-position: top;
+  position: relative;
+  z-index: -1;
+}
+.text p {
+  width: 80%;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+  /* background-color: rgba(160, 6, 6, 0.89); */
+  padding: 30px;
+}
+.text::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.541);
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.number {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid red; */
+  /* background-color: aqua; */
+}
+.number > div {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+
+  /* border: 1px solid red; */
+}
+
+.number > div > div {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.number > div > div > p {
+  font-size: 35px;
+  text-align: center;
+  color: rgb(245, 240, 240);
+}
+.number > div > div > p > b {
+  font-size: 46px;
+  color: red;
+}
+@media (max-width: 1024px) {
+  .text p {
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .number > div > div {
+    width: 35%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .text p {
+    width: 100%;
+  }
+  .number > div > div > p {
+    font-size: 30px;
+    text-align: center;
+    color: rgb(245, 240, 240);
+  }
+  .number > div > div > p > b {
+    font-size: 40px;
+    color: red;
+  }
+}
+@media (max-width: 428px) {
+  .number > div {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  .number > div > div {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

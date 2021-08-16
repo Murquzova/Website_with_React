@@ -1,0 +1,86 @@
+.soldat {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+.soldat > div {
+  width: 80%;
+  display: flex;
+}
+.soldat > div > div {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.soldat img {
+  width: 90%;
+  height: 80%;
+  box-shadow: -10px 0px 15px 1px #000000;
+}
+.soldat img:hover {
+  animation: shake 1.2s ease-in-out;
+}
+
+.soldat p {
+  width: 100%;
+  font-size: 18px;
+  font-family: myFirstFont;
+}
+.soldat p:hover {
+  text-decoration: underline;
+}
+@keyframes shake {
+  0%,
+  50%,
+  100% {
+    transform: rotate(0deg);
+  }
+  10%,
+  30% {
+    transform: rotate(-1deg);
+  }
+  20%,
+  40% {
+    transform: rotate(1deg);
+  }
+}
+
+@media (max-width: 769px) {
+  .soldat > div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .soldat > div > div {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
+@media (max-width: 428px){
+  .soldat > div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .soldat > div > div {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .soldat img {
+    width: 90%;
+    height: 90%;
+    box-shadow: -10px 0px 15px 1px #000000;
+  }
+}

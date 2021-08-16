@@ -1,0 +1,111 @@
+.twopage3 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+  background-color: rgba(231, 212, 184, 0.301);
+}
+.divp3 {
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+  text-align: center;
+  /* padding: 20px; */
+  /* border: 1px solid red; */
+}
+.divp3 p {
+  width: 60%;
+  font-size: 40px;
+  font-family: myFirstFont;
+}
+.twopage3 > div {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* border: 1px solid red; */
+}
+.twopage3 > div > div {
+  width: 30%;
+  height: 100%;
+  /* margin: 10px; */
+  /* transition: 0.5s; */
+  /* border: 4px solid rgba(255, 0, 0, 0.678); */
+  border-radius: 50%;
+  display: flex;
+  /* border: 1px solid red; */
+  
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.twopage3 > div > div > div {
+  width: 50%;
+  transition: 0.5s;
+  transform: scale(1);
+}
+.twopage3 > div > div > div:hover {
+  transform: scale(1.1);
+}
+
+.twopage3 > div > div img {
+  width: 100%;
+  height: 100%;
+  border-radius: 60%;
+}
+
+.twopage3 > div > div > p {
+  font-size: 30px;
+text-align: center;
+  font-family: myFirstFont;
+}
+@media (max-width: 769px){
+  .divp3 p {
+    width: 90%;
+    font-size: 37px;
+    font-family: myFirstFont;
+  }
+  .twopage3 > div > div > div {
+    width: 90%;
+    transition: 0.5s;
+    transform: scale(1);
+  }
+}
+@media (max-width: 428px){
+  .divp3 p {
+    width: 100%;
+    font-size: 30px;
+    font-family: myFirstFont;
+  }
+  .twopage3 > div > div > div {
+    width: 100%;
+    transition: 0.5s;
+    transform: scale(1);
+  }
+  .twopage3 > div {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid red; */
+  }
+  .twopage3 > div > div {
+    width: 60%;
+    height: 100%;
+    /* margin: 10px; */
+    /* transition: 0.5s; */
+    /* border: 4px solid rgba(255, 0, 0, 0.678); */
+    border-radius: 50%;
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}

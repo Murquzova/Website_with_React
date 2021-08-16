@@ -1,0 +1,18 @@
+.qoruma {
+  width: 100%;
+  /* border: 1px solid red; */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+}
+.qoruma p {
+  margin-top: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+.qoruma span {
+  font-size: 20px;
+  width: 100%;
+  text-align: center;
+}

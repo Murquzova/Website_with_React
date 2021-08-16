@@ -1,0 +1,113 @@
+footer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgba(179, 156, 132, 0.918);
+  padding: 20px 0;
+}
+
+.bashliqfoot {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.bashliqfoot i {
+  font-size: 50px;
+  color: white;
+  /* padding-left: 10px; */
+}
+.bashliqfoot h1 {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  justify-content: center;
+  color: #fff;
+  font-size: 50px;
+  font-family: myFirstFont;
+}
+.foot2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.foot2 i {
+  font-size: 30px;
+  color: white;
+}
+.foot2 i:hover {
+  animation: shake 1.2s ease-in-out;
+  background: rgb(63, 251, 220);
+  background: radial-gradient(
+    circle,
+    rgba(63, 251, 220, 1) 10%,
+    rgba(80, 195, 255, 1) 56%,
+    rgba(70, 252, 244, 1) 78%
+  );
+}
+@keyframes shake {
+  0%,
+  50%,
+  100% {
+    transform: rotate(0deg);
+  }
+  10%,
+  30% {
+    transform: rotate(-10deg);
+  }
+  20%,
+  40% {
+    transform: rotate(10deg);
+  }
+}
+.foot2 div i {
+  margin: 10px;
+  border: 1px solid #fff;
+  padding: 10px;
+  border-radius: 50%;
+}
+.foot2 p {
+  font-size: 20px;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .bashliqfoot {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .bashliqfoot i {
+    font-size: 40px;
+    color: white;
+    /* padding-left: 10px; */
+  }
+  .bashliqfoot h1 {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    justify-content: center;
+    color: #fff;
+    font-size: 40px;
+    font-family: myFirstFont;
+  }
+  .foot2 i {
+    font-size: 20px;
+  }
+}
+@media (max-width: 428px){
+  footer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(179, 156, 132, 0.918);
+    padding: 20px 0;
+  }
+ }

@@ -1,0 +1,33 @@
+.threepage {
+  width: 100%;
+  height: 1000px;
+  background-image: url("/src//components/foto/home.webp");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  object-fit: cover;
+  background-position: top;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: -1;
+}
+.threepage > p {
+  color: #fff;
+  font-size: 60px;
+  width: 100%;
+  text-align: center;
+  font-family: myFirstFont;
+
+}
+.threepage::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.295);
+    z-index: -1;
+}

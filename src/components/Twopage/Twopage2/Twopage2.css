@@ -1,0 +1,99 @@
+.twopage2 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(231, 212, 184, 0.301);
+  padding: 80px 0;
+}
+.twopage2 h1 {
+  font-size: 45px;
+  font-family: myFirstFont;
+  width: 100%;
+}
+.twopage2 > p {
+  font-family: myFirstFont;
+  /* padding:  ; */
+  font-size: 21px;
+  width: 50%;
+  text-align: center;
+  position: relative;
+}
+.twopage2 > p::before {
+  content: "";
+  width: 400px;
+  position: absolute;
+  top: 110%;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 2px;
+  background-color: rgba(0, 0, 0, 0.548);
+  border-radius: 50%;
+}
+.twopage2 > p > b {
+  font-size: 30px;
+}
+.twopage2 > p::after {
+  content: "";
+  width: 400px;
+  position: absolute;
+  top: -10%;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 2px;
+  background-color: rgba(0, 0, 0, 0.548);
+  border-radius: 50%;
+}
+@media (max-width: 769px){
+  .twopage2 h1 {
+    font-size: 37px;
+    font-family: myFirstFont;
+    width: 100%;
+  }
+  .twopage2 > p {
+    font-family: myFirstFont;
+    font-size: 21px;
+    width: 70%;
+    text-align: center;
+    position: relative;
+  }
+}
+@media (max-width: 428px){
+  .twopage2 h1 {
+    font-size: 30px;
+    font-family: myFirstFont;
+    width: 100%;
+  }
+  .twopage2 > p {
+    font-family: myFirstFont;
+    font-size: 21px;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    padding: 0;
+    margin: 0;
+  }
+  .twopage2 > p::after {
+    content: "";
+    width: 200px;
+    position: absolute;
+    top: -4%;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 2px;
+    background-color: rgba(0, 0, 0, 0.548);
+    border-radius: 50%;
+  }
+  .twopage2 > p::before {
+    content: "";
+    width: 200px;
+    position: absolute;
+    top: 104%;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 2px;
+    background-color: rgba(0, 0, 0, 0.548);
+    border-radius: 50%;
+  }
+}

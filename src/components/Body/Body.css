@@ -1,0 +1,73 @@
+.body {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgba(231, 212, 184, 0.658);
+  padding: 70px 0;
+  /* background-color: rgba(231, 212, 184, 0.301); */
+}
+.body p {
+  font-size: 25px;
+  width: 60%;
+  text-align: center;
+  font-family: myFirstFont;
+  color: rgba(0, 0, 0, 0.815);
+}
+.body h1 {
+  color: rgba(0, 0, 0, 0.89);
+  font-size: 45px;
+  font-family: myFirstFont;
+  text-align: center;
+}
+
+button {
+  padding: 20px 30px;
+  margin-top: 30px;
+  border-radius: 90px;
+  background-color: rgb(155, 7, 7);
+  color: white;
+  font-size: 17px;
+  transform: scale(1);
+  transition: 0.5s;
+}
+button:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 769px){
+.body p {
+  font-size: 25px;
+  width: 80%;
+  text-align: center;
+  font-family: myFirstFont;
+  color: rgba(0, 0, 0, 0.815);
+}
+}
+
+@media (max-width: 426px){
+  .body p {
+    font-size: 22px;
+    width: 90%;
+    text-align: center;
+    font-family: myFirstFont;
+    color: rgba(0, 0, 0, 0.815);
+  }
+  }
+  @media (max-width: 376px){
+    .body h1 {
+      color: rgba(0, 0, 0, 0.89);
+      font-size: 40px;
+      font-family: myFirstFont;
+      text-align: center;
+    }
+    .body p {
+      font-size: 22px;
+      width: 97%;
+      text-align: center;
+      font-family: myFirstFont;
+      color: rgba(0, 0, 0, 0.815);
+    }
+  }
